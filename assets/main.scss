@@ -1,0 +1,46 @@
+@import "utils/normalize.scss";
+@import 'utils/fonts.scss';
+@import 'utils/mixins.scss';
+@import 'utils/variables.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: $content-width;
+    min-width: $breakpoint_sm;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: $main-font;
+    // overflow-y: hidden;
+}
+
+.main {
+  display: flex;
+  margin-top: 14px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 120px;
+  background-color: #D5D5D5;
+  border-radius: 8px;
+}
+
+@media (max-width: $breakpoint_sm) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+@import "../assets/blocks/header.scss";
+@import "../assets/blocks/filters.scss";
+@import "../assets/blocks/catalog.scss";

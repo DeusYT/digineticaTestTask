@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+   <header class="header">
+    <div class="header__wrapper">
+        <div class="header__logo logo">
+            <a href="/" class="logo__link">
+                <img class="logo__img" src="./assets/img/logo.svg" alt="Логотип">
+                <span class="logo__text">Логотип</span>
+            </a>
+        </div>
+        <div class="header__category category">Каталог</div>
+    </div>
+    <div class="header__search search">
+        <button class="search__back-button">
+            <img class="search__back-img" src="./assets/img/back-arrow.svg" alt="Назад">
+            Кнопка назад
+        </button>
+        <button class="search__button">
+            <img class="search__img" src="./assets/img/search.svg" alt="Поиск">
+            <span class="search__button-text">Найти</span>
+        </button>
+        <input class="search__search-panel" placeholder="Поиск по 100 000 товаров" type="text">
+        <button class="search__cancle-button">
+            <img class="search__cancle-img" src="./assets/img/cancel.svg" alt="Назад">
+            Кнопка назад
+        </button>
+    </div>
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a href="/" class="menu__link">Информация о компании</a>
+            </li>
+            <li class="menu__item">
+                <a href="/" class="menu__link">Контакты</a>
+            </li>
+            <li class="menu__item">
+                <a href="/" class="menu__link">Полезные ссылки</a>
+            </li>
+        </ul>
+    </nav>
+   </header> 
+   <main class="main">
+        <section class="filters"> 
+            <h2 class="filters__title">Название категории</h2>
+            <form class="form">
+                <fieldset class="form__categories">
+                    <div class="filters__parent-categories parent-categories">
+                        <span class="parent-categories__name">Название категории</span>
+                        <span class="parent-categories__count">3</span>
+                    </div>
+                    <ul class="categories-list">
+                        <li class="categories-list__item">
+                            <label class="categories-list__label">
+                                <input class="categories-list__radio" type="radio" name="category" value="1">
+                                <div class="categories-list__wrapper">
+                                    <span class="categories-list__name">Название категории</span>
+                                    <span class="categories-list__count">3</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="categories-list__item">
+                            <label class="categories-list__label">
+                                <input class="categories-list__radio" type="radio" name="category" value="2">
+                                <div class="categories-list__wrapper">
+                                    <span class="categories-list__name">Название категории</span>
+                                    <span class="categories-list__count">3</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="categories-list__item categories-list__item_active">
+                            <label class="categories-list__label">
+                                <input class="categories-list__radio" type="radio" name="category" value="3">
+                                <div class="categories-list__wrapper">
+                                    <span class="categories-list__name">Название категории</span>
+                                    <span class="categories-list__count">3</span>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>         
+                    </fieldset>
+                    <fieldset class="form__price price">
+                        <h3 class="price__title">Цена</h3>
+                        <div class="price__wrapper">
+                            <div class="price__min">
+                                <input class="price__input" type="number" value="5500">
+                            </div> 
+                            <div class="seporator">-</div>
+                            <div class="price__max">
+                                <input class="price__input" type="number" value="5500"> 
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form__brands brands">
+                        <div class="brands__wrapper">
+                            <h3 class="brands__title">Бренд</h3>
+                            <a href="/" class="brands__clear-button">Очистить</a>
+                        </div>
+                        <div class="brands__search">
+                            <button class="brands__button">
+                                <img class="brands__search-img" src="./assets/img/search-2.svg" alt="Поиск">
+                                Поиск
+                            </button>
+                            <input class="brands__input" type="text" placeholder="Поиск">
+                        </div>
+                        <ul class="brands__list">
+                            <li class="brands__item">
+                                <label class="brands__label">
+                                    <input class="brands__checkbox" type="checkbox" name="brands">
+                                    <span class="brands__name">Атрибут</span>
+                                </label>
+                                <span class="brands__count">3</span>
+                            </li>
+                            <li class="brands__item">
+                                <label class="brands__label">
+                                    <input class="brands__checkbox" type="checkbox" name="brands">
+                                    <span class="brands__name">Атрибут</span>
+                                </label>
+                                <span class="brands__count">3</span>
+                            </li>
+                            <li class="brands__item">
+                                <label class="brands__label">
+                                    <input class="brands__checkbox" type="checkbox" name="brands">
+                                    <span class="brands__name">Атрибут</span>
+                                </label>
+                                <span class="brands__count">3</span>
+                            </li>
+                            <li class="brands__item">
+                                <label class="brands__label">
+                                    <input class="brands__checkbox" type="checkbox" name="brands">
+                                    <span class="brands__name">Атрибут</span>
+                                </label>
+                                <span class="brands__count">3</span>
+                            </li>
+                            <li class="brands__item">
+                            <label class="brands__label">
+                                <input class="brands__checkbox" type="checkbox" name="brands">
+                                <span class="brands__name">Атрибут</span>
+                            </label>
+                            <span class="brands__count">3</span>
+                            </li>
+                            <li class="brands__item">
+                            <label class="brands__label">
+                                <input class="brands__checkbox" type="checkbox" name="brands">
+                                <span class="brands__name">Атрибут</span>
+                            </label>
+                            <span class="brands__count">3</span>
+                            </li>
+                            <li class="brands__item">
+                            <label class="brands__label">
+                                <input class="brands__checkbox" type="checkbox" name="brands">
+                                <span class="brands__name">Атрибут</span>
+                            </label>
+                            <span class="brands__count">3</span>
+                            </li>
+                            <li class="brands__item">
+                            <label class="brands__label">
+                                <input class="brands__checkbox" type="checkbox" name="brands">
+                                <span class="brands__name">Атрибут</span>
+                            </label>
+                            <span class="brands__count">3</span>
+                            </li>
+                            <li class="brands__item">
+                            <label class="brands__label">
+                                <input class="brands__checkbox" type="checkbox" name="brands">
+                                <span class="brands__name">Атрибут</span>
+                            </label>
+                            <span class="brands__count">3</span>
+                            </li>
+                            <li class="brands__item">
+                            <label class="brands__label">
+                                <input class="brands__checkbox" type="checkbox" name="brands">
+                                <span class="brands__name">Атрибут</span>
+                            </label>
+                            <span class="brands__count">3</span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="form__size size">
+                    <h3 class="size__title">Размер</h3>
+                    <ul class="size__list">
+                        <li class="size__item">
+                            <label class="size__label">
+                                <input class="size__checkbox" type="checkbox" name="size">
+                                <span class="size__name">Атрибут</span>
+                            </label>
+                            <span class="size__count">3</span>
+                        </li>
+                        <li class="size__item">
+                            <label class="size__label">
+                                <input class="size__checkbox" type="checkbox" name="size">
+                                <span class="size__name">Атрибут</span>
+                            </label>
+                            <span class="size__count">3</span>
+                        </li>
+                        <li class="size__item">
+                            <label class="size__label">
+                                <input class="size__checkbox" type="checkbox" name="size">
+                                <span class="size__name">Атрибут</span>
+                            </label>
+                            <span class="size__count">3</span>
+                        </li>
+                        <li class="size__item">
+                            <label class="size__label">
+                                <input class="size__checkbox" type="checkbox" name="size">
+                                <span class="size__name">Атрибут</span>
+                            </label>
+                            <span class="size__count">3</span>
+                        </li>
+                        <li class="size__item">
+                            <label class="size__label">
+                                <input class="size__checkbox" type="checkbox" name="size">
+                                <span class="size__name">Атрибут</span>
+                            </label>
+                            <span class="size__count">3</span>
+                        </li>
+                        <li class="size__item">
+                            <label class="size__label">
+                                <input class="size__checkbox" type="checkbox" name="size">
+                                <span class="size__name">Атрибут</span>
+                            </label>
+                            <span class="size__count">3</span>
+                        </li>
+                    </ul>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="catalog">
+            <ul class="catalog__list">
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img"  src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product product_disabled">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+                <li class="catalog__item product">
+                    <div class="product__overflow">
+                        <img class="product__img" width="333" height="200" src="./assets/img/product.jpg" alt="">
+                    </div>
+                    <span class="product__brand">Бренд</span>
+                    <p class="product__title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                    <div class="product__wrapper">
+                        <span class="product__price">5 990 ₽</span>
+                        <span class="product__old-price">5 990 ₽</span>
+                    </div>
+                    <button class="product__button">Купить</button>
+                    <button class="product__arrived-notice">Сообщить о поступлении</button>
+                </li>
+            </ul>
+            </section>
+        </main>
+    </body>
+</html>

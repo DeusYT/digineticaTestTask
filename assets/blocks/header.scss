@@ -1,0 +1,247 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+
+    padding-left: 12px;
+
+    &__wrapper {
+        min-width: 265px;
+    }
+
+    &__logo,
+    &__category {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__category {
+        margin-left: 15px;
+    }
+}
+
+
+.logo {
+    padding: 25px 15px;
+    line-height: 10px;
+    text-align: center;
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 16px;
+
+    &__link {
+        color: #000;
+        text-decoration: none;
+    }
+
+    &__img,
+    &__text {
+        vertical-align: middle;
+    }
+
+    &__text {
+        margin-left: 8px;
+    }
+
+    &__wrapper {
+        max-width: 300px;
+        font-size: 0;
+    }
+}
+
+.category {
+    width: 104px;
+    height: 50px;
+    padding: 12px 0;
+    border: 1px solid #73AFF4;
+    border-radius: 8px;
+    text-align: center;
+    font-family: $second-font;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.search {
+    display: flex;
+    max-width: 1015px;
+    width: 100%;
+    font-size: 0;
+
+    &__button {
+        border: 1px solid #73AFF4;
+        border-right: 0;
+        border-radius: 10px 0 0 10px;
+        background-color: #fff;
+    }
+
+    &__back-button,
+    &__cancle-button {
+        display: none;
+    }
+
+    &__search-panel {
+        padding-left: 8px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid #73AFF4;
+        border-left: 0;
+        border-radius: 0 10px 10px 0;
+        outline: none;
+        font-size: 16px;
+        background-color: #fff;
+        color: #000;
+        
+        &::placeholder {
+            font-family: $second-font;
+            font-size: 16px;
+        }
+    }
+
+    &__img {
+        padding-left: 12px;
+    }
+
+}
+
+.menu {
+    max-width: 420px;
+    width: 100%;
+    font-family: $second-font;
+    font-weight: 400;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 20px;
+        list-style: none;
+    }
+
+    &__link {
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+            color:#7397F5;
+            transition: 0.3s;
+        }
+    }
+}
+
+@media (max-width: $breakpoint_md) {
+    .header {
+        justify-content: center;
+        &__wrapper {
+            padding-right: 25px;
+        }
+    }
+
+    .search {
+        max-width: 480px;
+    }
+}
+
+@media (max-width: $breakpoint_sd) {
+    .header {
+        &__category {
+            margin-left: 0;
+        }
+
+        &__wrapper {
+            padding-right: 0;
+        }
+
+        &__search {
+            max-width: 220px;
+        }
+    }
+
+    .menu {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: $breakpoint_mind) {
+    .header {
+        &__wrapper {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $breakpoint_sm) {
+    .header {
+        position: relative;
+        margin-top: 57px;
+        height: 44px;
+        &__wrapper {
+            display: none;
+        }
+    }
+
+    .search {
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 42px;
+        max-width: 307px;
+        height: 37px;
+        padding-top: 6px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #D5D5D5;
+        
+        &__back-button {
+            position: absolute;
+            top: 3px;
+            left: 12px;
+            display: block;
+            width: 25px;
+            height: 25px;
+            border: 0;
+            background-color: #fff;
+        }
+
+        &__cancle-button {
+            margin-right: 10px;
+            display: block;
+            border: 0;
+            background-color: #fff;
+        }
+
+        &__button {
+            order: 2;
+            width: 115px;
+            height: 38px;
+            border: none;
+            border-radius: 5px;
+            background-color: #7397F5;
+            text-align: center;
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__button-text {
+            display: block;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+
+        &__search-panel {
+            padding-left: 0;
+            border: 0;
+            overflow: ellipsis;
+            
+            &:placeholder {
+                font-size: 16px;
+            }
+        }
+    }
+
+    
+    .menu {
+        display: none;
+    }
+
+    
+}
